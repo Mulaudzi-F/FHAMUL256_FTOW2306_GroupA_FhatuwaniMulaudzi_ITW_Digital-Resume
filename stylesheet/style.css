@@ -6,7 +6,7 @@ body{
      font-family: "Roboto", sans-serif;
 }
 header{
-    
+    position: sticky;
     background-color: #a2d2ff;
     
 
@@ -30,7 +30,7 @@ hr{
 }
 #exprience{
   position: relative;
-  bottom: 50px;
+  bottom: 80px;
    
 }
 #skills{
@@ -39,7 +39,37 @@ hr{
   
 }
 .bar{
-    width:80px;
+    width:100px;
     display: inline-block;
-    border:1px solid #343a40;
+    background-color:  yellow;
+    border: 2px solid yellow;
+    height: 0;
+    
+    margin-left: 20px;
+}
+.bar-scale{
+    display: inline-block;
+    border:2px solid #a2d2ff;
+    margin-left: 20px;
+}
+.time{
+    width: 80px;}
+   
+
+.bar{
+    width:
+}
+h2, h4{
+    background-color: #a2d2ff;
+    width: 30%;
+    padding-left: 12px;
+    
+}
+figure img {
+    background-color: #a2d2ff;
+    width: 100px;
+    border-radius: 50%;
+}
+.icon {
+    display: inline;
 }
