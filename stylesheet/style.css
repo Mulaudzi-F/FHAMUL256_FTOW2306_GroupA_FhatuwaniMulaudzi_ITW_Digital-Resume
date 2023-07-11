@@ -4,6 +4,7 @@
 body{
     margin: 0;
      font-family: "Roboto", sans-serif;
+     padding: 9px;
 }
 header{
     position: sticky;
@@ -30,14 +31,19 @@ hr{
 }
 #exprience{
   position: relative;
-  bottom: 80px;
+  bottom: 270px;
    
 }
 #skills{
     display: grid;
     grid-template-columns: 1fr 1fr;
-  
+  height: 15%;
+  column-gap: 20px;
+  position: relative;
+  bottom: 200px;
+   
 }
+
 .bar{
     width:100px;
     display: inline-block;
@@ -47,29 +53,91 @@ hr{
     
     margin-left: 20px;
 }
-.bar-scale{
-    display: inline-block;
-    border:2px solid #a2d2ff;
-    margin-left: 20px;
-}
-.time{
-    width: 80px;}
-   
 
-.bar{
-    width:
-}
+
 h2, h4{
     background-color: #a2d2ff;
     width: 30%;
-    padding-left: 12px;
+    padding: 20px;
     
+}
+h4{
+    width: 65%;
+    padding: 20px;
+}
+.int{
+    text-align: center;
+    margin-left: 30%;
+    padding: 12px;
 }
 figure img {
     background-color: #a2d2ff;
     width: 100px;
     border-radius: 50%;
+    margin-left: 20px;
+}
+figcaption{
+    margin-left: 20px;
 }
 .icon {
-    display: inline;
+    display: inline-block;
+}
+.interests{
+    position: relative;
+    bottom: 230px;
+   
+}
+footer{
+    background-color: #335c67;
+    text-align: center;
+    padding: 100px;
+}
+form{
+    padding: 10px;
+    margin: 20px;
+}
+input[type="text"], input[type="email"]{
+    margin-bottom: 20px;
+    width: 30%;
+    height: 40px;
+    padding: 10px;
+}
+button{
+    width: 15%;
+    height: 50px;
+    padding: 16px;
+    padding-top: 20px;
+    margin-top: 22px;
+    background-color: #a2d2ff;
+    border-radius: 5px;
+    color: black;
+    font-size: 18px;
+
+}
+textarea{
+    width: 25%;
+    height: 200px;
+    margin-right: 70px;
+    margin-top: 50px;
+    padding: 20px;
+}
+#lab{
+    position: relative;
+    bottom: 185px;;
+}
+#contact a{
+    margin: 7%;
+   text-align: end;
+    
+}
+input{
+    border: none;
+}
+.radios{
+    margin-right: 250px;
+    margin-top: 20px;
+    
+}
+label{
+    color:white;
 }
