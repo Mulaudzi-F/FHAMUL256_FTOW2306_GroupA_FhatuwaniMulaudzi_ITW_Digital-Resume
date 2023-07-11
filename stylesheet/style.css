@@ -16,6 +16,11 @@ header img{
     width: 200px;
     border-radius: 10%;
 }
+li img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
 section{
     margin-left: 3%;
     display: grid;
@@ -29,10 +34,17 @@ hr{
 #summary{
     height: 10%;
 }
+#education{
+    margin: 10px;
+}
 #exprience{
   position: relative;
-  bottom: 270px;
+  bottom: 390px;
    
+}
+
+#exprience span, #education span{
+    margin-left: 40px;
 }
 #skills{
     display: grid;
@@ -40,7 +52,7 @@ hr{
   height: 15%;
   column-gap: 20px;
   position: relative;
-  bottom: 200px;
+  bottom: 280px;
    
 }
 
