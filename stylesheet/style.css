@@ -13,6 +13,7 @@ header{
     background-origin: content-box;
     width: 100%;
     margin: 0;
+    position: sticky;
 }
 header a{
     color: #004b23;
@@ -239,4 +240,61 @@ label{
     border: 1px solid black;
     color: black;
     height: 20px;
+  }
+  @media (max-width: 600px){    
+ #container{
+    margin-right: 59px;
+    font-size: 0.5em;
+ }
+ nav ul, li{
+    display: flex;
+    flex-direction: row;
+   justify-content: end;
+   align-items: flex-start;
+    font-size: 7px;
+    position: relative;
+    top: 10px
+   
+ }
+ header a {
+    color: #c1121f;
+ }
+ section{
+    display: flex;
+    flex-direction: column;
+ }
+ #exprience{
+    margin-top: 400px;
+ }
+ #skills{
+    font-size: 0.8em;
+   
+ }
+
+ input[type="text"], input[type="email"], textarea
+ {
+    width: 210px;
+ }
+ .radios{
+    width: 200px;
+ }
+ #lab{
+    position: relative;
+    top: 69px;
+    right:118px ;
+ }
+ textarea{
+    margin-left: 10px;
+ }
+ button{
+    width: 150px;
+ }
+ #contact img{
+    display: block;
+    position: relative;
+    top: 25px;
+    }
+    h2, h4{
+        width: 49%;
+    }
   }
