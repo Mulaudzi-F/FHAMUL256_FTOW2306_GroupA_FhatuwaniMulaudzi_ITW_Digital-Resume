@@ -8,11 +8,14 @@ body{
 }
 header{
     background: #a2d2ff url(/images/Hero\ image.jpg) no-repeat center;
-    height: 400px;
+    height: 420px;
     background-size: cover;
     background-origin: content-box;
     width: 100%;
     margin: 0;
+}
+header a{
+    color: #004b23;
 }
 #container{
     display: inline-block;
@@ -25,13 +28,20 @@ header{
     
    
 }
+h1{
+    background-color: #a2d2ff;
+    padding: 10px;
+}
+header p {
+    font-size: 20px;
+}
 
 nav ul{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     position: relative;
-    bottom: 310px;
+    bottom: 320px;
 
 }
 li {
@@ -93,7 +103,7 @@ h2, h4{
     background-color: #a2d2ff;
     width: 30%;
     padding: 20px;
-    border-radius: 25px;
+    
     animation: flash 5s ease-in-out infinite alternate;
     
 }
@@ -145,6 +155,7 @@ button{
     padding-top: 20px;
     margin-top: 22px;
     background-color: #a2d2ff;
+    border-color: #a2d2ff;
     border-radius: 5px;
     color: black;
     font-size: 18px;
@@ -166,6 +177,9 @@ textarea{
    text-align: end;
    color: wheat;
     
+}
+footer h3{
+    color: wheat;
 }
 input{
     border: none;
