@@ -4,7 +4,7 @@
 body{
     margin: 0;
      font-family: "Roboto", sans-serif;
-     padding: 9px;
+     padding: 0px;
 }
 img{
     max-width: 100%;
@@ -12,7 +12,7 @@ img{
 }
 header{
     background: #a2d2ff url(/images/Hero\ image.jpg) no-repeat center;
-    height: 420px;
+    height: ;
     background-size: cover;
     background-origin: content-box;
     width: 100%;
@@ -45,9 +45,13 @@ nav ul{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    position: relative;
+  
+    flex-wrap: wrap;
+}
+nav{
+      position: relative;
     bottom: 320px;
-
+    padding: 0;
 }
 li {
     margin: 20px;
@@ -146,6 +150,7 @@ footer{
 form{
     padding: 10px;
     margin: 20px;
+    width: 100%;
 }
 input[type="text"], input[type="email"]{
     margin-bottom: 20px;
@@ -209,6 +214,7 @@ label{
 #contact{
     display: flex;
     flex-direction: row;
+    
 }
 @keyframes flash{
     25%{
@@ -249,15 +255,22 @@ label{
     color: black;
     height: 20px;
   }
-  @media only screen and (max-width: 600px){   
-/* mobile devices */
+
+
+  @media only screen and (min-width:300px )and (max-width: 768px){   
+
     body{
         margin: 0;
+        
+    font-size: 1rem;
     }
     .box-1, .box-2{
         height: 10px;
     }
-    
+    ul{
+        padding: 0;
+        margin-right: 30px;
+    }
    
  #container{
     margin-right: 59px;
@@ -269,10 +282,12 @@ label{
    justify-content: end;
    align-items: flex-start;
     font-size: 7px;
-    position: relative;
-    top: 10px
-   
  }
+  nav{
+    position: relative;
+    top:25px;
+    padding: 0;
+  }
  header a {
     color: #c1121f;
  }
@@ -312,20 +327,20 @@ label{
         width: 49%;
     }
    
-   body{
-    font-size: 0.7rem;
-   }
+   
+   
    #contact{
     display: flex;
     flex-direction: column;
+    gap: 10px;
     
 
 }
   }
 
-/* small devices(portrate tablets and large phones*/
+/* small devices(portrate tablets and large phones */
 
-@media only screen and (min-width: 600px) {
+ @media only screen and (min-width:769px )and (max-width: 1024px) {
     section{
         display: flex;
         flex-direction: column;
@@ -336,6 +351,9 @@ label{
      #skills{
         font-size: 0.8em;
        
+     }
+     header{
+        height: 490px;
      }
      #container{
         margin-left: 0;
@@ -369,19 +387,50 @@ label{
         width: 150px;
      }
      
-        #contact{
+    #contact{
             display: flex;
             flex-direction: column;
+            gap: 25px;
             
         }
-        #contact img, #contact a{
-            margin-right: 20px;
-        }
-        h2, h4{
+      
+    h2, h4{
             width: 49%;
         }
+    body{
+            font-size: 0.8rem;
+           }
+    
+    }
        
-       body{
-        font-size: 0.7rem;
-       }
+@media only screen and (min-width:1024px){
+    h2, h4{
+        width: 49%;
+    }
+    #contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .foot{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #contact img{
+        position: relative;
+        top: 0px;
+    }
+   h4{
+    width: 69%;
+   }
+   nav{
+   position: relative;
+   bottom: 120px;
+   }
+   #container{
+    position: relative;
+    top: 120px;
+   }
 }
