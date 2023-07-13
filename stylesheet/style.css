@@ -6,6 +6,10 @@ body{
      font-family: "Roboto", sans-serif;
      padding: 9px;
 }
+img{
+    max-width: 100%;
+    height: auto;
+}
 header{
     background: #a2d2ff url(/images/Hero\ image.jpg) no-repeat center;
     height: 420px;
@@ -171,7 +175,7 @@ textarea{
 }
 #lab{
     position: relative;
-    bottom: 185px;;
+    bottom: 180px;
 }
 #contact a{
     margin: 7%;
@@ -198,10 +202,13 @@ label{
     height: 30px;
     border-radius: 50%;
     position: relative;
-    left: 65px;
+    left: 6%;
     top: 10px;
-  
+}
     
+#contact{
+    display: flex;
+    flex-direction: row;
 }
 @keyframes flash{
     25%{
@@ -221,6 +228,7 @@ label{
     display: flex; 
     align-items: center; 
     margin-bottom: 20px; 
+    width: 250px;
   }
   .skills p{
       margin-right: 2px;
@@ -241,7 +249,16 @@ label{
     color: black;
     height: 20px;
   }
-  @media (max-width: 600px){    
+  @media only screen and (max-width: 600px){   
+/* mobile devices */
+    body{
+        margin: 0;
+    }
+    .box-1, .box-2{
+        height: 10px;
+    }
+    
+   
  #container{
     margin-right: 59px;
     font-size: 0.5em;
@@ -281,7 +298,8 @@ label{
  #lab{
     position: relative;
     top: 69px;
-    right:118px ;
+    right:138px ;
+    display: block;
  }
  textarea{
     margin-left: 10px;
@@ -289,12 +307,81 @@ label{
  button{
     width: 150px;
  }
- #contact img{
-    display: block;
-    position: relative;
-    top: 25px;
-    }
+
     h2, h4{
         width: 49%;
     }
+   
+   body{
+    font-size: 0.7rem;
+   }
+   #contact{
+    display: flex;
+    flex-direction: column;
+    
+
+}
   }
+
+/* small devices(portrate tablets and large phones*/
+
+@media only screen and (min-width: 600px) {
+    section{
+        display: flex;
+        flex-direction: column;
+     }
+     #exprience{
+        margin-top: 400px;
+     }
+     #skills{
+        font-size: 0.8em;
+       
+     }
+     #container{
+        margin-left: 0;
+        margin-top: 20px;
+     }
+    h4{
+        margin-left: 60px;
+    }
+    .int{
+        width: 20%;
+    }
+     input[type="text"], input[type="email"], textarea
+     {
+        width: 210px;
+     }
+     .radios{
+        width: 200px;
+        margin-left: 40px;
+     }
+     #lab{
+        position: relative;
+        top: 69px;
+        right:130px ;
+        
+       
+     }
+     textarea{
+        margin-left: 60px;
+     }
+     button{
+        width: 150px;
+     }
+     
+        #contact{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        #contact img, #contact a{
+            margin-right: 20px;
+        }
+        h2, h4{
+            width: 49%;
+        }
+       
+       body{
+        font-size: 0.7rem;
+       }
+}
